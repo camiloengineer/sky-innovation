@@ -1,3 +1,4 @@
+import React from 'react';
 import type { NextPage } from 'next';
 import '../styles/Home.module.scss';
 
@@ -8,11 +9,10 @@ const Home: NextPage = () => {
   return (
     <ContainerBlock
       title="Sky Innovation"
-      description="Haz que la innovación comience"
-    >
+      description="Haz que la innovación comience">
       <Index />
     </ContainerBlock>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
