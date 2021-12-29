@@ -14,9 +14,11 @@
 	h1 {
 		@apply text-white text-5xl font-bold uppercase;
 	}
-
 	h2 {
 		@apply text-white text-4xl font-thin;
+	}
+	h3 {
+		@apply text-orange-default text-2xl font-bold uppercase;
 	}
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -8,11 +8,18 @@ import Isotipo from './../public/images/isotipo.svg';
 export default function Navbar() {
 	const router = useRouter();
 	const [collapse, setCollapse] = useState(true);
+	const [scroll, setScroll] = useState(0);
+
+	useEffect(() => {
+		window.onscroll = function () {
+			setScroll(window.scrollY);
+		};
+	}, []);
 
 	return (
 		<nav
 			className={`duration-700 text-center uppercase flex items-center justify-between flex-wrap bg-white py-1 px-7 xl:px-64 max-w-none z-20 fixed w-full z-40 ${
-				collapse && 'opacity-70'
+				!scroll && collapse  && 'opacity-70'
 			}`}>
 			<div className="flex items-center flex-shrink-0 text-white">
 				<Imagotipo
