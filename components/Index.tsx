@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-import { Welcome } from './Welcome'
-import { HaveToday } from './HaveToday'
+import { Welcome } from './Welcome';
+import { HaveToday } from './HaveToday';
 
 export const Index = () => {
-    return (
-        <>
-            <Welcome />
-            <HaveToday />
-        </>
-    )
-}
+	return (
+		<>
+			<Welcome />
+			<HaveToday />
+		</>
+	);
+};
