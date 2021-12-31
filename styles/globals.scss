@@ -20,6 +20,12 @@
 	h3 {
 		@apply text-orange-default text-2xl font-bold uppercase;
 	}
+	h4 {
+		@apply text-purple text-xl uppercase;
+	}
+	h5 {
+		@apply text-blue text-xl font-thin;
+	}
 }
 
 html,
