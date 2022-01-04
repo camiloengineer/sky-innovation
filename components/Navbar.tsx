@@ -18,10 +18,10 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className={`duration-700 text-center uppercase flex items-center justify-between flex-wrap bg-white py-1 px-7 xl:px-64 max-w-none z-20 fixed w-full z-40 ${
+			className={`duration-700 text-center uppercase flex items-center justify-between flex-wrap bg-white-dark py-1 px-7 xl:px-64 max-w-none z-20 fixed w-full z-40 ${
 				!scroll && collapse  && 'opacity-70'
 			}`}>
-			<div className="flex items-center flex-shrink-0 text-white">
+			<div className="flex items-center flex-shrink-0 text-white-default">
 				<Imagotipo
 					className="w-40 h-20 hidden xl:block normal-case"
 					alt="logo"

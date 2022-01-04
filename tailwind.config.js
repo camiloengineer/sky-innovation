@@ -3,14 +3,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      blue: '#247BA0',
+      black: '#02111B',
+      purple: '#C69DD2',
       orange: {
         default: '#E76F51',
         dark: '#CD5335'
       },
-      blue: '#247BA0',
-      black: '#02111B',
-      white: '#F4F4F9',
-      purple: '#C69DD2',
+      white: {
+        default: '#F4F4F9',
+        dark: '#dcdfe7'
+      }
     },
     extend: {
       backgroundImage: {
